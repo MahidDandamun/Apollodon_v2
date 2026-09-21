@@ -2,114 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   :root {
+    /* Light Mode Variables */
+    --surface-base: 210 20% 98%;
+    --surface-card: 210 20% 100%;
+    --surface-elevated: 210 16% 96%;
+    --surface-hover: 210 14% 93%;
+    --border-subtle: 214 32% 91%;
+    --border-interactive: 214 32% 85%;
 
-    --background: 0 0% 100%;
+    --text-primary: 222 47% 11%;
+    --text-secondary: 215 16% 47%;
+    --text-tertiary: 215 16% 55%;
 
-    --foreground: 240 10% 3.9%;
+    --accent-cyan: 191 91% 36%;
+    --accent-blue: 221 83% 53%;
+    --status-normal: 160 84% 39%;
+    --status-warning: 38 92% 50%;
+    --status-critical: 0 72% 51%;
 
-    --card: 0 0% 100%;
+    --chart-1: 191 91% 36%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 160 84% 39%;
+    --chart-4: 213 97% 68%;
+    --chart-5: 330 81% 71%;
 
-    --card-foreground: 240 10% 3.9%;
+    --background: var(--surface-base);
+    --foreground: var(--text-primary);
+    
+    --card: var(--surface-card);
+    --card-foreground: var(--text-primary);
+    
+    --popover: var(--surface-elevated);
+    --popover-foreground: var(--text-primary);
+    
+    --primary: var(--accent-cyan);
+    --primary-foreground: 210 20% 98%;
+    
+    --secondary: var(--accent-blue);
+    --secondary-foreground: 210 20% 98%;
+    
+    --muted: var(--surface-hover);
+    --muted-foreground: var(--text-secondary);
+    
+    --accent: var(--accent-cyan);
+    --accent-foreground: 210 20% 98%;
+    
+    --destructive: var(--status-critical);
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: var(--border-subtle);
+    --input: var(--border-interactive);
+    --ring: var(--accent-cyan);
 
-    --popover: 0 0% 100%;
-
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-
-    --input: 240 5.9% 90%;
-
-    --ring: 240 10% 3.9%;
-
-    --chart-1: 12 76% 61%;
-
-    --chart-2: 173 58% 39%;
-
-    --chart-3: 197 37% 24%;
-
-    --chart-4: 43 74% 66%;
-
-    --chart-5: 27 87% 67%;
-
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
+
   .dark {
+    /* Dark Mode Variables */
+    --surface-base: 222 47% 5%;
+    --surface-card: 221 50% 10%;
+    --surface-elevated: 221 48% 15%;
+    --surface-hover: 221 47% 21%;
+    --border-subtle: 220 41% 20%;
+    --border-interactive: 219 39% 29%;
 
-    --background: 240 10% 3.9%;
+    --text-primary: 210 40% 96%;
+    --text-secondary: 215 20% 65%;
+    --text-tertiary: 215 18% 57%;
 
-    --foreground: 0 0% 98%;
+    --accent-cyan: 187 85% 53%;
+    --accent-blue: 199 89% 60%;
+    --status-normal: 160 84% 45%;
+    --status-warning: 38 92% 55%;
+    --status-critical: 0 72% 55%;
 
-    --card: 240 10% 3.9%;
+    --chart-1: 187 85% 53%;
+    --chart-2: 38 92% 55%;
+    --chart-3: 160 84% 45%;
+    --chart-4: 213 97% 68%;
+    --chart-5: 330 81% 71%;
 
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-
-    --input: 240 3.7% 15.9%;
-
-    --ring: 240 4.9% 83.9%;
-
-    --chart-1: 220 70% 50%;
-
-    --chart-2: 160 60% 45%;
-
-    --chart-3: 30 80% 55%;
-
-    --chart-4: 280 65% 60%;
-
-    --chart-5: 340 75% 55%
+    --background: var(--surface-base);
+    --foreground: var(--text-primary);
+    
+    --card: var(--surface-card);
+    --card-foreground: var(--text-primary);
+    
+    --popover: var(--surface-elevated);
+    --popover-foreground: var(--text-primary);
+    
+    --primary: var(--accent-cyan);
+    --primary-foreground: 222 47% 5%;
+    
+    --secondary: var(--accent-blue);
+    --secondary-foreground: 222 47% 5%;
+    
+    --muted: var(--surface-hover);
+    --muted-foreground: var(--text-secondary);
+    
+    --accent: var(--accent-cyan);
+    --accent-foreground: 222 47% 5%;
+    
+    --destructive: var(--status-critical);
+    --destructive-foreground: 210 40% 96%;
+    
+    --border: var(--border-subtle);
+    --input: var(--border-interactive);
+    --ring: var(--accent-cyan);
   }
 }
-
-
 
 @layer base {
   * {
@@ -117,5 +120,65 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Typography Scale */
+  .text-display { @apply font-heading font-bold text-[28px] leading-[1.1] tracking-[-0.02em]; }
+  .text-h2 { @apply font-heading font-semibold text-[22px] leading-[1.25] tracking-[-0.015em]; }
+  .text-h3 { @apply font-heading font-semibold text-[18px] leading-[1.33] tracking-[-0.01em]; }
+  .text-h4 { @apply font-heading font-medium text-[16px] leading-[1.375] tracking-normal; }
+  .text-body { @apply font-sans font-normal text-[14px] leading-[1.43] tracking-normal; }
+  .text-body-sm { @apply font-sans font-normal text-[12px] leading-[1.33] tracking-[0.01em]; }
+  .text-caption { @apply font-sans font-medium text-[11px] leading-[1.27] tracking-[0.015em]; }
+  .text-overline { @apply font-sans font-semibold text-[10px] leading-[1.2] tracking-[0.08em] uppercase; }
+  .text-metric { @apply font-heading font-bold text-[28px] leading-none tracking-[-0.02em] tabular-nums; }
+  .text-metric-sm { @apply font-heading font-semibold text-[20px] leading-none tracking-[-0.01em] tabular-nums; }
+  
+  /* Glass Utilities */
+  .glass-panel {
+    @apply bg-[hsl(var(--surface-card)/0.7)] backdrop-blur-xl border border-[hsl(var(--border-subtle))];
+  }
+  
+  .dark .glass-panel {
+    @apply bg-[hsl(var(--surface-card)/0.4)];
+  }
+  
+  /* Layout utilities */
+  .custom-scrollbar {
+    @apply [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-black/10 dark:[&::-webkit-scrollbar-thumb]:bg-white/10 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-black/20 dark:hover:[&::-webkit-scrollbar-thumb]:bg-white/20;
+  }
+}
+
+/* Leaflet Customizations */
+.leaflet-container {
+  background: hsl(var(--surface-base)) !important;
+}
+.custom-leaflet-tooltip {
+  background-color: hsl(var(--surface-elevated)) !important;
+  border: 1px solid hsl(var(--border-interactive)) !important;
+  border-radius: 8px !important;
+  color: hsl(var(--text-primary)) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  padding: 0 !important;
+}
+.custom-leaflet-tooltip::before {
+  border-top-color: hsl(var(--border-interactive)) !important;
+}
+.custom-leaflet-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Dark Map Tile Filter */
+.dark .map-tiles-dark {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+@layer base {
+  :root {
+    --color-map-bg: var(--surface-base);
+    --color-map-grid: var(--border-subtle);
   }
 }

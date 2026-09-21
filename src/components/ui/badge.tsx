@@ -15,6 +15,8 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
         outline: "text-foreground",
+        ocean: "border-transparent bg-ocean-500 text-white shadow hover:bg-ocean-600",
+        ghost_ocean: "border-transparent bg-ocean-100 text-ocean-800 hover:bg-ocean-200 dark:bg-ocean-900/50 dark:text-ocean-100 dark:hover:bg-ocean-800",
       },
     },
     defaultVariants: {
